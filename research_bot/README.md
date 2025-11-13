@@ -2,7 +2,7 @@
 
 Multi-agent research system with specialized roles, extended with Temporal's durable execution.
 
-*Adapted from [OpenAI Agents SDK research bot](https://github.com/openai/openai-agents-python/tree/main/examples/research_bot)*
+
 
 ## Architecture
 
@@ -24,12 +24,3 @@ Then run the research workflow:
 ```bash
 uv run openai_agents/research_bot/run_research_workflow.py
 ```
-
-## Suggested Improvements
-
-If you're building your own research bot, some ideas to add to this are:
-
-1. Retrieval: Add support for fetching relevant information from a vector store. You could use the File Search tool for this.
-2. Image and file upload: Allow users to attach PDFs or other files, as baseline context for the research.
-3. More planning and thinking: Models often produce better results given more time to think. Improve the planning process to come up with a better plan, and add an evaluation step so that the model can choose to improve its results, search for more stuff, etc.
-4. Code execution: Allow running code, which is useful for data analysis.
